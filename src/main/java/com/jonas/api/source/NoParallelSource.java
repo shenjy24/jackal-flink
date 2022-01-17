@@ -9,6 +9,9 @@ public class NoParallelSource implements SourceFunction<Long> {
     private long count = 1L;
     private boolean isRunning = true;
 
+    /**
+     * 大部分情况下，都需要在这个方法中实现一个循环，这样就可以循环产生数据
+     */
     @Override
     public void run(SourceContext<Long> ctx) throws Exception {
         while (isRunning) {
