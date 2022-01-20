@@ -1,8 +1,5 @@
 package com.jonas.table;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
 import org.apache.flink.api.common.typeinfo.Types;
@@ -43,13 +40,5 @@ public class BatchSql {
         //把数据结果添加到Sink中
         sqlQuery.insertInto("csvOutputTable");
         env.execute("sql batch");
-    }
-
-    @Data
-    @NoArgsConstructor
-    @AllArgsConstructor
-    public static class Student {
-        private String name;
-        private int age;
     }
 }
