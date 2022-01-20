@@ -13,7 +13,7 @@ import org.apache.flink.table.descriptors.Schema;
 
 public class BatchTable {
 
-    private static final String path = " D:\\java\\workspace\\jackal-flink\\src\\main\\resources\\";
+    private static final String path = "D:\\java\\workspace\\jackal-flink\\src\\main\\resources\\";
 
     public static void main(String[] args) throws Exception{
         ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
