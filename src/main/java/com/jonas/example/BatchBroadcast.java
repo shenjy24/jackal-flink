@@ -1,4 +1,4 @@
-package com.jonas.broadcast;
+package com.jonas.example;
 
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.common.functions.RichMapFunction;
